@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyMotiv</string>
+    <string name="stepsFormat">%1$s Seps</string>
+    <string name="avgStepsFormat">%1$d Average Steps / Minute </string>
+</resources>

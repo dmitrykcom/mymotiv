@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motiv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <FrameLayout
+        android:id="@+id/dateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:background="#66ba5d"
+        android:paddingLeft="25dp"
+        android:paddingTop="35dp">
+        <TextView
+            android:id="@+id/date"
+            android:textColor="#fff"
+            android:textSize="32sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_below="@id/dateContainer"
+        android:background="#325f34"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6bc861"
+                android:textSize="50sp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.dmitryk.mymotiv.view.CircularProgress
+                    android:id="@+id/progress"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical|right"
+                    motiv:stroke_width = "5dp"
+                    motiv:main_color = "#6bc861"
+                    motiv:secondary_color = "#3e743e"/>
+            </FrameLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/averageSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6bc861"
+            android:textSize="50sp"/>
+    </LinearLayout>
+</RelativeLayout>
